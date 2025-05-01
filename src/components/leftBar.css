@@ -1,0 +1,70 @@
+.left-bar {
+  background-color: #1e1e2e; /* ciemne tło, jak w Neovim */
+  color: #a6e3a1; /* zielonkawy kolor tekstu */
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  padding: 16px;
+  height: 100vh;
+  width: 300px;
+  border-right: 1px solid #45475a;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background-color: #f38ba8;
+  margin-left: 4px;
+  animation: blink 1s step-end infinite;
+}
+
+.tech-box {
+    width: auto;
+    height: auto;
+    border: rgba(255, 255, 255, 0.82) 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.tech-p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.tech-p:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.tech-box i {
+    margin-right: 10px;
+    color: #4a80d8;
+    font-size: 20px;
+}
+.credentials-first2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 300px;
+    transition: transform 0.3s;
+    color: white
+}
+.credentials-first2:hover {
+    transform: scale(1.1);
+}

@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <div className="app-container">
         <LeftBar onSectionChange={setActiveSection} />
-        <div className="main-content">
+        <div className="main-content min-h-[50vh]">
           {renderSection()}
         </div>
       </div>
